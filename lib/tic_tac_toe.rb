@@ -96,6 +96,6 @@ def play(board)
     if draw?(board)
       puts "Cat's Game!"
       break
-    end    
+    end
   end
 end
