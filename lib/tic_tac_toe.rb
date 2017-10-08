@@ -83,7 +83,7 @@ def play(board)
   until over?(board)
     turn(board)
     if won?(board)
-      puts "Congratulations #{winner(board)}!"
+      puts "Congratulations #{current_player(board)}!"
       break
     end
     if draw?(board)
