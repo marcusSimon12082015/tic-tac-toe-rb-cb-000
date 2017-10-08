@@ -6,4 +6,5 @@ puts "Welcome to Tic Tac Toe!"
 puts "Where would you like to go?"
 board = [" "," "," "," "," "," "," "," "," "]
 display_board(board)
-play(board)
+konec = play(board)
+puts konec
