@@ -83,11 +83,9 @@ def play(board)
     turn(board)
     if won?(board)
       return puts "Congratulations #{winner(board)}!"
-      break
     end
     if draw?(board)
       return puts "Cat's Game!"
-      break
     end
   end
 end
