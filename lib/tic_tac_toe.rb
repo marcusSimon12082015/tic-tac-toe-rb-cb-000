@@ -46,9 +46,9 @@ def turn(board)
     else
       puts "Enter 1-9:"
       input = gets.strip
-      index = input_to_index(input)    
+      index = input_to_index(input)
     end
-    if valid == true 
+    if valid == true
       break
     end
   end
