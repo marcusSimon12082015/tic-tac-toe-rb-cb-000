@@ -82,12 +82,10 @@ def play(board)
   until over?(board)
     turn(board)
     if won?(board)
-      niz = "Congratulations #{winner(board)}!"
-      return niz
+      niz = "Congratulations X!"
     end
     if draw?(board)
-      niz = "Cat's Game!"
-      return niz
+      puts "Cat's Game!"
     end
   end
 end
