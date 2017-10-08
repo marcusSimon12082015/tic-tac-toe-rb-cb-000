@@ -89,7 +89,6 @@ end
 def play(board)
   until over?(board)
     if won?(board)
-      winnerplayer = winner(board)
       puts "Congratulations #{winner(board)}!"
       break
     end
