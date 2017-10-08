@@ -78,3 +78,11 @@ def winner(board)
     board[winning_combo.first]
   end
 end
+
+def play(board)
+  turn_number = 0
+  until turn_count < 9 
+    turn(board)
+    turn_number +=1
+  end
+end
