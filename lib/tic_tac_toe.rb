@@ -82,7 +82,7 @@ end
 def play(board)
   puts "Welcome to Tic Tac Toe!"
   puts "Where would you like to go?"
-  until !over?(board)
+  until over?(board)
     turn(board)
     if won?(board)
       puts "Congratulations #{winner(board)}!"
