@@ -37,11 +37,21 @@ def turn(board)
   puts "Enter 1-9:"
   input = gets.strip
   index = input_to_index(input)
-  if !valid_move?(board,index)
-    turn(board)
+  valid = nil
+  loop do
+    if valid_move?(board,index)
+      move(board,index,current_player(board))
+      display_board(board)
+      valid = true
+    else
+      puts "Enter 1-9:"
+      input = gets.strip
+      index = input_to_index(input)    
+    end
+    if valid == true 
+      break
+    end
   end
-  move(board,index,current_player(board))
-  display_board(board)
 end
 
 def turn_count(board)
