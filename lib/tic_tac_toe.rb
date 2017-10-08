@@ -82,14 +82,12 @@ end
 def play(board)
   puts "Welcome to Tic Tac Toe!"
   puts "Where would you like to go?"
-  turn_number = 0
-  until turn_number < 9
+  until !over?(board)
     turn(board)
     if won?(board)
       puts "Congratulations #{winner(board)}!"
       break
     end
-    turn_number +=1
   end
   if draw?(board)
     puts "Cat's Game!"
