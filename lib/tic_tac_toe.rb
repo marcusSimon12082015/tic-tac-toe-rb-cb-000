@@ -81,8 +81,14 @@ end
 
 def play(board)
   turn_number = 0
-  until turn_count < 9 
+  until turn_count < 9
     turn(board)
+    if won?(board)
+      puts "Congratulations #{winner(board)}!"
+      break
+    end
     turn_number +=1
   end
+  if draw?(board)
+    puts "Cat's Game!"
 end
