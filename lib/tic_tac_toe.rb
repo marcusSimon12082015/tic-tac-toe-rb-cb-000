@@ -80,6 +80,8 @@ def winner(board)
 end
 
 def play(board)
+  puts "Welcome to Tic Tac Toe"
+  puts "Where would you like to go?"
   turn_number = 0
   until turn_number < 9
     turn(board)
