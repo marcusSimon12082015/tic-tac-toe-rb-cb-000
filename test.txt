@@ -51,25 +51,3 @@
     plays the first turn of the game
     plays the first few turns of the game
     checks if the game is won after every turn
-    checks if the game is draw after every turn
-    stops playing if someone has won
-    congratulates the winner X (FAILED - 1)
-
-Failures:
-
-  1) ./lib/tic_tac_toe.rb #play congratulates the winner X
-     Failure/Error: expect($stdout).to receive(:puts).with("Congratulations X!")
-
-       (#<IO:<STDOUT>>).puts("Congratulations X!")
-           expected: 1 time with arguments: ("Congratulations X!")
-           received: 0 times
-     # ./spec/02_play_spec.rb:86:in `block (3 levels) in <top (required)>'
-
-Finished in 0.04463 seconds (files took 0.19965 seconds to load)
-37 examples, 1 failure
-
-Failed examples:
-
-rspec ./spec/02_play_spec.rb:82 # ./lib/tic_tac_toe.rb #play congratulates the winner X
-
-Coverage report generated for RSpec to /home/marcusSimon12082015/tic-tac-toe-rb-cb-000/coverage. 53 / 55 LOC (96.36%) covered.
